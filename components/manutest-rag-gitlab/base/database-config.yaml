@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: manutest-rag-gitlab-database-config
+data:
+  VECTORDB_HOST: "manutest-rag-gitlab-database"
+  VECTORDB_PORT: "8000"

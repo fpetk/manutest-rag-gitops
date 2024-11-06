@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: manutest-rag-gitlab-repository
+spec:
+  url: https://github.com/fpetk/manutest-rag

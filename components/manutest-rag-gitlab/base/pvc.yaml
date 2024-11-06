@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  labels: 
+    app.kubernetes.io/instance: manutest-rag-gitlab
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: manutest-rag-gitlab 
+  name: manutest-rag-gitlab
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  resources:
+    requests:
+      storage: 100Gi

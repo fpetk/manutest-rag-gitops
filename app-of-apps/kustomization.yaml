@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:         
+  rhtap/gitops: manutest-rag-gitlab 
+  janus-idp.io/tekton: manutest-rag-gitlab
+  backstage.io/kubernetes-id: manutest-rag-gitlab
+  backstage.io/kubernetes-namespace: rhdh-app 
+  app.kubernetes.io/part-of: manutest-rag-gitlab
+resources: 
+- application-dev.yaml
